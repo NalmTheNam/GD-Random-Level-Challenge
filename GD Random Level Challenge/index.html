@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GD Random Level Challenge</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="levelstyles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Geometry Dash Random Level Challenge</h1>
+  </header>
+  <main>
+    <button id="selectPlayerType">&larr; Select Player Type</button>
+    <div id="introduction">
+      <h2>What type of player are you?</h2>
+      <div class="grid">
+        <div class="item">
+          <button data-value="1" class="plrtypebtn">Beginner</button>
+          <div class="grid">
+            <div>
+              <p>Levels:</p>
+              <p style="font-size: small">
+                Stereo Madness <img src="assets/difficultyimages/Easy.png" alt="Easy" title="Easy" width="13" />
+                <br>
+                Back on Track <img src="assets/difficultyimages/Easy.png" alt="Easy" title="Easy" width="13" />
+                <br>
+                Polargeist <img src="assets/difficultyimages/Normal.png" alt="Normal" title="Normal" width="13" />
+                <br>
+                Dry Out <img src="assets/difficultyimages/Normal.png" alt="Normal" title="Normal" width="13" />
+                <br>
+                Base After Base <img src="assets/difficultyimages/Hard.png" alt="Hard" title="Hard" width="13" />
+                <br>
+                Can't Let Go <img src="assets/difficultyimages/Hard.png" alt="Hard" title="Hard" width="13" />
+                <br>
+                Jumper <img src="assets/difficultyimages/Harder.png" alt="Harder" title="Harder" width="13" />
+                <br>
+                Time Machine <img src="assets/difficultyimages/Harder.png" alt="Harder" title="Harder" width="13" />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <button data-value="2" class="plrtypebtn">Intermediate</button>
+          <div class="grid">
+            <div>
+              <p>Levels:</p>
+              <p style="font-size: small">
+                Can't Let Go <img src="assets/difficultyimages/Hard.png" alt="Hard" title="Hard" width="13" />
+                <br>
+                Jumper <img src="assets/difficultyimages/Harder.png" alt="Harder" title="Harder" width="13" />
+                <br>
+                Time Machine <img src="assets/difficultyimages/Harder.png" alt="Harder" title="Harder" width="13" />
+                <br>
+                Cycles <img src="assets/difficultyimages/Harder.png" alt="Harder" title="Harder" width="13" />
+                <br>
+                xStep <img src="assets/difficultyimages/Insane.png" alt="Insane" title="Insane" width="13" />
+                <br>
+                Clutterfunk
+                <img src="assets/difficultyimages/Insane.png" alt="Insane" title="Insane" width="13" />
+                <br>
+                <span style="font-size: x-small">Theory of Everything</span>
+                <img src="assets/difficultyimages/Insane.png" alt="Insane" title="Insane" width="11" />
+                <br>
+                <span style="font-size: xx-small">Electroman Adventures</span>
+                <img src="assets/difficultyimages/Insane.png" alt="Insane" title="Insane" width="11" />
+                <br>
+                Clubstep
+                <img src="assets/difficultyimages/Demon.png" alt="Demon" title="Demon" width="13" />
+                <br>
+                Blast Processing
+                <img src="assets/difficultyimages/Harder.png" alt="Harder" title="Harder" width="13" />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <button data-value="3" class="plrtypebtn">Pro</button>
+        </div>
+      </div>
+      <p>Click on one of these buttons to continue.</p>
+    </div>
+    <div id="detail">
+      <p>
+        <span class="bold">Your Level:</span>
+        <span id="level">[Randomize it first!]</span>
+        <img id="difficulty" src="assets/difficultyimages/Unrated.png" width="23" alt="Unrated" title="Unrated" />
+      </p>
+      <p>
+        <span>You must make a maximum of</span>
+        <span id="attempts" class="bold">0</span>
+        <span>attempts</span>
+      </p>
+      <p>
+        <span>You must reach</span>
+        <span id="percentage" class="bold">0%</span>
+        <span>or you fail</span>
+      </p>
+    </div>
+  </main>
+  <br />
+  <footer>
+    <form id="inputs"></form>
+    <br />
+    <button id="pickRandomLevel">Pick a random level!</button>
+  </footer>
+  <script src="scripts/dom.js"></script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js" type="module"></script>
+</body>
+
+</html>

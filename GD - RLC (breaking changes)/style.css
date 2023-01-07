@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Pusab;
+    src: url(assets/fonts/PUSAB___.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+span > div.noscript * {
+    font-family: Pusab;
+}
+
+#introduction {
+    background: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: opacity 500ms;
+}
+
+#introduction * {
+    font-family: Pusab;
+}
+
+#detail>p {
+    font-size: 20px;
+}
+
+#level {
+    font-family: Pusab;
+    font-size: 22px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid>.item {
+    background: gainsboro;
+}
+
+.grid>.item>.plrtypebtn {
+    font: normal 20px Pusab;
+    width: 40%;
+    height: 50px;
+}
+
+body {
+    transition: background 250ms;
+    -webkit-transition: background 250ms;
+    -moz-transition: background 250ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+    font-family: Pusab;
+}
+
+button {
+    font-family: Pusab;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button#pickRandomLevel {
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+button#selectPlayerType {
+    top: 0;
+    left: 0; 
+    position: absolute;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    background: gray;
+    transition: 250ms;
+    margin: 0.4rem;
+}
+
+legend {
+    margin: 0 auto;
+}
+
+fieldset {
+    border: gainsboro solid 2px;
+    background: radial-gradient(white, gainsboro);
+}

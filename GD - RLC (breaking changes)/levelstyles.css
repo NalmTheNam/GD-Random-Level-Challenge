@@ -1,0 +1,32 @@
+/*
+body.stereo_madness {
+    background: rgb(9, 9, 121);
+    background: linear-gradient(0deg, rgba(9, 9, 121, 1) 53%, rgba(0, 35, 255, 1) 100%);
+}
+
+body.back_on_track {
+    background: rgb(118, 9, 121);
+    background: linear-gradient(0deg, rgba(118, 9, 121, 1) 53%, rgba(255, 0, 249, 1) 100%);
+}
+
+body.polargeist {
+    background: rgb(187, 20, 23);
+    background: linear-gradient(0deg, rgba(187, 20, 23, 1) 53%, rgba(255, 0, 99, 1) 100%);
+}*/
+
+body.cant_let_go {
+    background: rgb(1,125,11);
+    background: radial-gradient(circle, rgba(1,125,11,1) 3%, rgba(0,0,0,1) 50%, rgba(1,125,11,1) 100%); 
+    color: white;
+}
+
+body.cant_let_go fieldset {
+    color: black
+}
+
+body.cant_let_go fieldset > legend {
+    background: -webkit-linear-gradient(white, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
